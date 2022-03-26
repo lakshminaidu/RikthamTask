@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402CF97D27EDFFCE004E0D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF97C27EDFFCE004E0D33 /* AppDelegate.swift */; };
+		402CF97F27EDFFCE004E0D33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF97E27EDFFCE004E0D33 /* SceneDelegate.swift */; };
+		402CF98427EDFFCE004E0D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402CF98227EDFFCE004E0D33 /* Main.storyboard */; };
+		402CF98727EDFFCE004E0D33 /* RikthamApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 402CF98527EDFFCE004E0D33 /* RikthamApp.xcdatamodeld */; };
+		402CF98927EDFFCF004E0D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402CF98827EDFFCF004E0D33 /* Assets.xcassets */; };
+		402CF98C27EDFFCF004E0D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402CF98A27EDFFCF004E0D33 /* LaunchScreen.storyboard */; };
+		402CF99A27EE010E004E0D33 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF99927EE010E004E0D33 /* BaseViewController.swift */; };
+		402CF99D27EE013F004E0D33 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF99C27EE013F004E0D33 /* BusinessSearch.swift */; };
+		402CF99F27EE05AF004E0D33 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF99E27EE05AF004E0D33 /* HomeViewController.swift */; };
+		402CF9A127EE05BE004E0D33 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9A027EE05BE004E0D33 /* SearchViewController.swift */; };
+		402CF9A327EE05D8004E0D33 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9A227EE05D8004E0D33 /* HomeViewModel.swift */; };
+		402CF9A527EE05F1004E0D33 /* BusinessDeatailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9A427EE05F1004E0D33 /* BusinessDeatailController.swift */; };
+		402CF9A727EE0602004E0D33 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9A627EE0602004E0D33 /* CategoryViewController.swift */; };
+		402CF9A927EE062E004E0D33 /* BusinessRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9A827EE062E004E0D33 /* BusinessRequestModel.swift */; };
+		402CF9AF27EE0683004E0D33 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9AE27EE0683004E0D33 /* NetworkService.swift */; };
+		402CF9B327EE1055004E0D33 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9B227EE1055004E0D33 /* AppConstants.swift */; };
+		402CF9B727EE3968004E0D33 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9B627EE3968004E0D33 /* UIView+Extensions.swift */; };
+		402CF9B927EE3A00004E0D33 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9B827EE3A00004E0D33 /* NSObject+Extensions.swift */; };
+		402CF9BD27EE3C82004E0D33 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9BC27EE3C82004E0D33 /* LocationService.swift */; };
+		402CF9C727EE3E09004E0D33 /* RikthamAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9C627EE3E09004E0D33 /* RikthamAppTests.swift */; };
+		402CF9CE27EE4457004E0D33 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9CD27EE4457004E0D33 /* SearchViewModel.swift */; };
+		402CF9D127EE5099004E0D33 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9D027EE5099004E0D33 /* DataBase.swift */; };
+		402CF9D327EE663A004E0D33 /* ImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9D227EE663A004E0D33 /* ImageView+Extention.swift */; };
+		402CF9DC27EEA08D004E0D33 /* BusinessDBModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9DA27EEA08D004E0D33 /* BusinessDBModel+CoreDataClass.swift */; };
+		402CF9DD27EEA08D004E0D33 /* BusinessDBModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CF9DB27EEA08D004E0D33 /* BusinessDBModel+CoreDataProperties.swift */; };
+		402CF9E127EEEB36004E0D33 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 402CF9E027EEEB36004E0D33 /* Mock.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		402CF9C827EE3E09004E0D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 402CF97127EDFFCE004E0D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 402CF97827EDFFCE004E0D33;
+			remoteInfo = RikthamApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		402CF97927EDFFCE004E0D33 /* RikthamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RikthamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		402CF97C27EDFFCE004E0D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		402CF97E27EDFFCE004E0D33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		402CF98327EDFFCE004E0D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		402CF98627EDFFCE004E0D33 /* RikthamApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RikthamApp.xcdatamodel; sourceTree = "<group>"; };
+		402CF98827EDFFCF004E0D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		402CF98B27EDFFCF004E0D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		402CF98D27EDFFCF004E0D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402CF99927EE010E004E0D33 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		402CF99C27EE013F004E0D33 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		402CF99E27EE05AF004E0D33 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		402CF9A027EE05BE004E0D33 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		402CF9A227EE05D8004E0D33 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		402CF9A427EE05F1004E0D33 /* BusinessDeatailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDeatailController.swift; sourceTree = "<group>"; };
+		402CF9A627EE0602004E0D33 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		402CF9A827EE062E004E0D33 /* BusinessRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRequestModel.swift; sourceTree = "<group>"; };
+		402CF9AE27EE0683004E0D33 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		402CF9B227EE1055004E0D33 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		402CF9B627EE3968004E0D33 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		402CF9B827EE3A00004E0D33 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		402CF9BC27EE3C82004E0D33 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		402CF9C427EE3E09004E0D33 /* RikthamAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RikthamAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		402CF9C627EE3E09004E0D33 /* RikthamAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RikthamAppTests.swift; sourceTree = "<group>"; };
+		402CF9CD27EE4457004E0D33 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		402CF9D027EE5099004E0D33 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		402CF9D227EE663A004E0D33 /* ImageView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Extention.swift"; sourceTree = "<group>"; };
+		402CF9DA27EEA08D004E0D33 /* BusinessDBModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BusinessDBModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		402CF9DB27EEA08D004E0D33 /* BusinessDBModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BusinessDBModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		402CF9E027EEEB36004E0D33 /* Mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		402CF97627EDFFCE004E0D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402CF9C127EE3E09004E0D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		402CF97027EDFFCE004E0D33 = {
+			isa = PBXGroup;
+			children = (
+				402CF9DA27EEA08D004E0D33 /* BusinessDBModel+CoreDataClass.swift */,
+				402CF9DB27EEA08D004E0D33 /* BusinessDBModel+CoreDataProperties.swift */,
+				402CF97B27EDFFCE004E0D33 /* RikthamApp */,
+				402CF9C527EE3E09004E0D33 /* RikthamAppTests */,
+				402CF97A27EDFFCE004E0D33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		402CF97A27EDFFCE004E0D33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				402CF97927EDFFCE004E0D33 /* RikthamApp.app */,
+				402CF9C427EE3E09004E0D33 /* RikthamAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		402CF97B27EDFFCE004E0D33 /* RikthamApp */ = {
+			isa = PBXGroup;
+			children = (
+				402CF99927EE010E004E0D33 /* BaseViewController.swift */,
+				402CF99727EE00CA004E0D33 /* Extensions */,
+				402CF99627EE00C2004E0D33 /* Utils */,
+				402CF97C27EDFFCE004E0D33 /* AppDelegate.swift */,
+				402CF99327EE00A2004E0D33 /* Home */,
+				402CF99427EE00A7004E0D33 /* Search */,
+				402CF97E27EDFFCE004E0D33 /* SceneDelegate.swift */,
+				402CF99B27EE012A004E0D33 /* Models */,
+				402CF9AD27EE0667004E0D33 /* NetworkService */,
+				402CF9AA27EE0637004E0D33 /* LocationService */,
+				402CF9CF27EE507C004E0D33 /* Database */,
+				402CF98227EDFFCE004E0D33 /* Main.storyboard */,
+				402CF98827EDFFCF004E0D33 /* Assets.xcassets */,
+				402CF98A27EDFFCF004E0D33 /* LaunchScreen.storyboard */,
+				402CF98D27EDFFCF004E0D33 /* Info.plist */,
+				402CF98527EDFFCE004E0D33 /* RikthamApp.xcdatamodeld */,
+				402CF9B227EE1055004E0D33 /* AppConstants.swift */,
+			);
+			path = RikthamApp;
+			sourceTree = "<group>";
+		};
+		402CF99327EE00A2004E0D33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				402CF99E27EE05AF004E0D33 /* HomeViewController.swift */,
+				402CF9A227EE05D8004E0D33 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		402CF99427EE00A7004E0D33 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9A027EE05BE004E0D33 /* SearchViewController.swift */,
+				402CF9CD27EE4457004E0D33 /* SearchViewModel.swift */,
+				402CF9A427EE05F1004E0D33 /* BusinessDeatailController.swift */,
+				402CF9A627EE0602004E0D33 /* CategoryViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		402CF99627EE00C2004E0D33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		402CF99727EE00CA004E0D33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9B627EE3968004E0D33 /* UIView+Extensions.swift */,
+				402CF9D227EE663A004E0D33 /* ImageView+Extention.swift */,
+				402CF9B827EE3A00004E0D33 /* NSObject+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		402CF99B27EE012A004E0D33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				402CF99C27EE013F004E0D33 /* BusinessSearch.swift */,
+				402CF9A827EE062E004E0D33 /* BusinessRequestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402CF9AA27EE0637004E0D33 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9BC27EE3C82004E0D33 /* LocationService.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		402CF9AD27EE0667004E0D33 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9AE27EE0683004E0D33 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		402CF9C527EE3E09004E0D33 /* RikthamAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9E027EEEB36004E0D33 /* Mock.json */,
+				402CF9C627EE3E09004E0D33 /* RikthamAppTests.swift */,
+			);
+			path = RikthamAppTests;
+			sourceTree = "<group>";
+		};
+		402CF9CF27EE507C004E0D33 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				402CF9D027EE5099004E0D33 /* DataBase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		402CF97827EDFFCE004E0D33 /* RikthamApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 402CF99027EDFFCF004E0D33 /* Build configuration list for PBXNativeTarget "RikthamApp" */;
+			buildPhases = (
+				402CF97527EDFFCE004E0D33 /* Sources */,
+				402CF97627EDFFCE004E0D33 /* Frameworks */,
+				402CF97727EDFFCE004E0D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RikthamApp;
+			productName = RikthamApp;
+			productReference = 402CF97927EDFFCE004E0D33 /* RikthamApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		402CF9C327EE3E09004E0D33 /* RikthamAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 402CF9CA27EE3E09004E0D33 /* Build configuration list for PBXNativeTarget "RikthamAppTests" */;
+			buildPhases = (
+				402CF9C027EE3E09004E0D33 /* Sources */,
+				402CF9C127EE3E09004E0D33 /* Frameworks */,
+				402CF9C227EE3E09004E0D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				402CF9C927EE3E09004E0D33 /* PBXTargetDependency */,
+			);
+			name = RikthamAppTests;
+			productName = RikthamAppTests;
+			productReference = 402CF9C427EE3E09004E0D33 /* RikthamAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		402CF97127EDFFCE004E0D33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					402CF97827EDFFCE004E0D33 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					402CF9C327EE3E09004E0D33 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 402CF97827EDFFCE004E0D33;
+					};
+				};
+			};
+			buildConfigurationList = 402CF97427EDFFCE004E0D33 /* Build configuration list for PBXProject "RikthamApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 402CF97027EDFFCE004E0D33;
+			productRefGroup = 402CF97A27EDFFCE004E0D33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				402CF97827EDFFCE004E0D33 /* RikthamApp */,
+				402CF9C327EE3E09004E0D33 /* RikthamAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		402CF97727EDFFCE004E0D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402CF98C27EDFFCF004E0D33 /* LaunchScreen.storyboard in Resources */,
+				402CF98927EDFFCF004E0D33 /* Assets.xcassets in Resources */,
+				402CF98427EDFFCE004E0D33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402CF9C227EE3E09004E0D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402CF9E127EEEB36004E0D33 /* Mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		402CF97527EDFFCE004E0D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402CF9DD27EEA08D004E0D33 /* BusinessDBModel+CoreDataProperties.swift in Sources */,
+				402CF99A27EE010E004E0D33 /* BaseViewController.swift in Sources */,
+				402CF9A327EE05D8004E0D33 /* HomeViewModel.swift in Sources */,
+				402CF9A527EE05F1004E0D33 /* BusinessDeatailController.swift in Sources */,
+				402CF9CE27EE4457004E0D33 /* SearchViewModel.swift in Sources */,
+				402CF98727EDFFCE004E0D33 /* RikthamApp.xcdatamodeld in Sources */,
+				402CF9B327EE1055004E0D33 /* AppConstants.swift in Sources */,
+				402CF9D327EE663A004E0D33 /* ImageView+Extention.swift in Sources */,
+				402CF9B727EE3968004E0D33 /* UIView+Extensions.swift in Sources */,
+				402CF9A127EE05BE004E0D33 /* SearchViewController.swift in Sources */,
+				402CF9D127EE5099004E0D33 /* DataBase.swift in Sources */,
+				402CF9B927EE3A00004E0D33 /* NSObject+Extensions.swift in Sources */,
+				402CF9AF27EE0683004E0D33 /* NetworkService.swift in Sources */,
+				402CF97D27EDFFCE004E0D33 /* AppDelegate.swift in Sources */,
+				402CF97F27EDFFCE004E0D33 /* SceneDelegate.swift in Sources */,
+				402CF99F27EE05AF004E0D33 /* HomeViewController.swift in Sources */,
+				402CF9A727EE0602004E0D33 /* CategoryViewController.swift in Sources */,
+				402CF99D27EE013F004E0D33 /* BusinessSearch.swift in Sources */,
+				402CF9DC27EEA08D004E0D33 /* BusinessDBModel+CoreDataClass.swift in Sources */,
+				402CF9BD27EE3C82004E0D33 /* LocationService.swift in Sources */,
+				402CF9A927EE062E004E0D33 /* BusinessRequestModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402CF9C027EE3E09004E0D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402CF9C727EE3E09004E0D33 /* RikthamAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		402CF9C927EE3E09004E0D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 402CF97827EDFFCE004E0D33 /* RikthamApp */;
+			targetProxy = 402CF9C827EE3E09004E0D33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		402CF98227EDFFCE004E0D33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				402CF98327EDFFCE004E0D33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		402CF98A27EDFFCF004E0D33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				402CF98B27EDFFCF004E0D33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		402CF98E27EDFFCF004E0D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		402CF98F27EDFFCF004E0D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		402CF99127EDFFCF004E0D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RikthamApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.RikthamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		402CF99227EDFFCF004E0D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RikthamApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.RikthamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		402CF9CB27EE3E09004E0D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.RikthamAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RikthamApp.app/RikthamApp";
+			};
+			name = Debug;
+		};
+		402CF9CC27EE3E09004E0D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.RikthamAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RikthamApp.app/RikthamApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		402CF97427EDFFCE004E0D33 /* Build configuration list for PBXProject "RikthamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402CF98E27EDFFCF004E0D33 /* Debug */,
+				402CF98F27EDFFCF004E0D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		402CF99027EDFFCF004E0D33 /* Build configuration list for PBXNativeTarget "RikthamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402CF99127EDFFCF004E0D33 /* Debug */,
+				402CF99227EDFFCF004E0D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		402CF9CA27EE3E09004E0D33 /* Build configuration list for PBXNativeTarget "RikthamAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402CF9CB27EE3E09004E0D33 /* Debug */,
+				402CF9CC27EE3E09004E0D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		402CF98527EDFFCE004E0D33 /* RikthamApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				402CF98627EDFFCE004E0D33 /* RikthamApp.xcdatamodel */,
+			);
+			currentVersion = 402CF98627EDFFCE004E0D33 /* RikthamApp.xcdatamodel */;
+			path = RikthamApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 402CF97127EDFFCE004E0D33 /* Project object */;
+}
